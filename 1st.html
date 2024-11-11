@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+        1.count the vowels and constants in string
+        Input:-karunakar
+    </h2>
+    <script>
+        let input = prompt("enter a string:").toLocaleLowerCase();
+        let value = " ";
+        for (let i = 0; i < input.length; i++) {
+            if (input.charAt(i) != " ") {
+                value += input.charAt(i);
+            }
+        }
+        let vowels = 0;
+        let consonants = 0;
+        for (let j = 0; j < value.length; j++) {
+            if (value.charAt(j) == 'a' || value.charAt(j) == 'e' || value.charAt(j) == 'i' || value.charAt(j) == 'o' || value.charAt(j) == 'u') {
+                vowels++;
+            }
+            else {
+                consonants++;
+            }
+        }
+        console.log(`there are ${vowels}vowels in the input string`);
+        console.log(`there are ${consonants}consonants in the input string`);
+    </script>
+</body>
+
+</html>
